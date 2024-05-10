@@ -130,11 +130,11 @@
             <div class="p-3">
               <a href="#">
                 <!-- Imatge -->
-                <img
-                  src="/img/akrapovic.jpeg"
-                  alt="Tub d'escapament Akrapovič"
-                  class="w-full rounded-t-lg"
-                />
+                <picture>
+                  <source media="(min-width: 650px)" srcset="/img/akrapovic.jpeg">
+                  <source media="(min-width: 465px)" srcset="/img/akra.jpg">
+                  <img src="/img/akra.jpg" alt="Tub d'escapament Akrapovič" class="w-full rounded-t-lg">
+                </picture>
                 <!-- Títol -->
                 <h5
                   class="mt-2 mb-1 text-lg font-bold tracking-tight text-gray-900 dark:text-white"
