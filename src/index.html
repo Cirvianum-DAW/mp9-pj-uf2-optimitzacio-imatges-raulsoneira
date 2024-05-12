@@ -56,22 +56,28 @@
 
   <!-- Container amb imatge de fons -->
   <div class="min-h-screen relative">
-    <img class="w-full object-cover h-screen" src="/resources/img/portada_Yamaha.webp"
-      alt="Portada">
+    <img class="w-full object-cover h-screen" 
+         src="/resources/img/portada_Yamaha.webp"
+         srcset="/resources/img/portada_Yamaha_small.webp 480w,
+                 /resources/img/portada_Yamaha_medium.webp 768w,
+                 /resources/img/portada_Yamaha.webp 1200w"
+         sizes="(max-width: 600px) 480px, (max-width: 1024px) 768px, 1200px"
+         alt="Portada">
     <div class="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
     <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center">
       <!-- Text sobreposat -->
       <div class="text-white text-center">
-        <h1 class="text-5xl font-bold font-[Koulen] tracking-wide">YAMAHA</h1>
+        <h1 class="text-5xl font-bold font-[Koulen] tracking-wide triangle"><span class="yamaha-animation">YAMAHA</span></h1>
         <br>
         <p class="text-3xl">EXPLORA YAMAHA</p>
       </div>
       <!-- Fi de text sobreposat -->
     </div>
   </div>
+  
   <!-- Fi de container amb imatge de fons -->
-
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+
 </html>
